@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp5"
+    android:padding="@dimen/dp5"
+    tools:context=".Widget"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:alpha="0.7"
+    android:background="@android:color/black"
+    android:transitionGroup="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:padding="@dimen/dp10"
+            android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reload"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_cached_black"
+                    android:layout_gravity="end"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/textVHeading"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/heading_text_size" />
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:id="@+id/textVContent"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textSize="@dimen/detail_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+</RelativeLayout>
